@@ -16,8 +16,12 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+
 	}
 
+	html{
+		height : 100%
+	}
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
@@ -76,7 +80,7 @@
 
 	html, body {
 		height: 100%;
-		overflow-x: hidden;
+
 		width: 100%;
 	}
 
@@ -102,21 +106,65 @@
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		background-color: #000;
+
+
+		height : 100%;
+
+
+
+
 		padding: 6em 4em 4em 4em;
 	}
+
+	.firstDiv{
+					/* The image used */
+			background: url("SortyMcSortFace_Group_4.jpg");
+
+			/* Full height */
+			height: 100%;
+
+			/* Center and scale the image nicely */
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			overflow : auto;
+			margin-t
+}
+
+	}
+
+
+	.headerDiv{
+		margin-left :;
+		margin-top: 20em;
+	}
+
+	.secondDiv{
+		height : 1%;
+		background-color : white;
+
+
+
+	}
+
+	.thirdDiv{
+		height : 20%;
+		background-color : black;
+
+	}
+
 
 		body > * {
 			position: relative;
 			z-index: 2;
 		}
-
+/
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
 			-ms-animation: none !important;
 			animation: none !important;
-			-moz-transition: none !important;
+			-moz-transition: none !important; */
 			-webkit-transition: none !important;
 			-ms-transition: none !important;
 			transition: none !important;
@@ -125,7 +173,7 @@
 		@media screen and (max-width: 1680px) {
 
 			body {
-				padding: 6em 3.5em 3.5em 3.5em;
+				padding: 0;
 			}
 
 		}
@@ -171,7 +219,8 @@
 			height: 100%;
 			left: 0;
 			opacity: 0;
-			position: absolute;
+
+			offset : bottom;
 			top: 0;
 			visibility: hidden;
 			width: 150%;
@@ -472,12 +521,16 @@
 	header p {
 		color: rgba(255, 255, 255, 0.5);
 		position: relative;
-		margin: 0 0 1.5em 0;
+
+
 	}
 
 	header h2 + p {
 		font-size: 1.25em;
 		margin-top: -1em;
+		margin-left: 10em;
+
+
 		line-height: 1.5em;
 	}
 
@@ -493,6 +546,8 @@
 		font-size: 0.9em;
 		margin-top: -0.6em;
 		line-height: 1.5em;
+		margin-left: 10em;
+
 	}
 
 	@media screen and (max-width: 980px) {
@@ -815,7 +870,7 @@
 			height: 2.75em;
 			line-height: 2.75em;
 			pointer-events: none;
-			position: absolute;
+
 			right: 0;
 			text-align: center;
 			top: 0;
@@ -884,7 +939,6 @@
 				height: 1.65em;
 				left: 0;
 				line-height: 1.58125em;
-				position: absolute;
 				text-align: center;
 				top: 0;
 				width: 1.65em;
@@ -948,6 +1002,7 @@
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
+
 		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
@@ -1109,7 +1164,6 @@
 		color: rgba(255, 255, 255, 0.5);
 		left: 4em;
 		opacity: 0.5;
-		position: absolute;
 	}
 
 		#footer .icons {

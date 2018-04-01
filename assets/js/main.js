@@ -23,6 +23,7 @@
 		var	$body = document.querySelector('body');
 
 	// Disable animations/transitions until everything's loaded.
+
 		$body.classList.add('is-loading');
 
 		window.addEventListener('load', function() {
@@ -32,6 +33,7 @@
 		});
 
 	// Slideshow Background.
+	/*
 		(function() {
 
 			// Settings.
@@ -103,7 +105,7 @@
 				}, settings.delay);
 
 		})();
-
+*/
 	// Signup Form.
 		(function() {
 
