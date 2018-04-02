@@ -111,6 +111,7 @@
 
 			// Vars.
 				var $form = document.querySelectorAll('#signup-form')[0],
+					url = 'https://script.google.com/macros/s/AKfycbxHBsvnYzuJInyN_E1bKoRtMfd-HfFW5j6ENoOw4pPumKVXRLc/exec',
 					$submit = document.querySelectorAll('#signup-form input[type="submit"]')[0],
 					$message;
 
@@ -157,16 +158,24 @@
 					// but there's enough here to piece together a working AJAX submission call that does.
 						window.setTimeout(function() {
 
-							// Reset form.
+							var jqxhr = $.ajax({
+							    url: url,
+							    method: "GET",
+							    dataType: "json",
+							    data: $form.serializeObject()
+							}).success(
+							    // do something
+								// Reset form.
 								$form.reset();
 
-							// Enable submit.
+								// Enable submit.
 								$submit.disabled = false;
 
-							// Show message.
-								$message._show('success', 'Thank you!');
+								// Show message.
+								$message._show('success', 'You have been added to our mailing list. Thank you!');
 								//$message._show('failure', 'Something went wrong. Please try again.');
 
+							);
 						}, 750);
 
 				});
