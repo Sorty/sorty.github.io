@@ -154,7 +154,7 @@
 						$submit.disabled = true;
 
 					var jqxhr = $.ajax({
-					    url: url,
+					    url: $url,
 					    method: "GET",
 					    dataType: "json",
 					    data: $(this).serializeObject()
