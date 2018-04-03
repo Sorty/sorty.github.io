@@ -156,27 +156,27 @@
 					// Process form.
 					// Note: Doesn't actually do anything yet (other than report back with a "thank you"),
 					// but there's enough here to piece together a working AJAX submission call that does.
-						window.setTimeout(function() {
+					window.setTimeout(function() {
+						// Reset form.
+						$form.reset();
 
-							var jqxhr = $.ajax({
-							    url: url,
-							    method: "GET",
-							    dataType: "json",
-							    data: $form.serializeObject()
-							}).success(
-							    // do something
-								// Reset form.
-								$form.reset();
+						// Enable submit.
+						$submit.disabled = false;
+						
+						var jqxhr = $.ajax({
+						    url: url,
+						    method: "GET",
+						    dataType: "json",
+						    data: $form.serializeObject()
+						}).success(
+						    // do something
 
-								// Enable submit.
-								$submit.disabled = false;
+							// Show message.
+							$message._show('success', 'You have been added to our mailing list. Thank you!');
+							//$message._show('failure', 'Something went wrong. Please try again.');
 
-								// Show message.
-								$message._show('success', 'You have been added to our mailing list. Thank you!');
-								//$message._show('failure', 'Something went wrong. Please try again.');
-
-							);
-						}, 750);
+						);
+					}, 750);
 
 				});
 
