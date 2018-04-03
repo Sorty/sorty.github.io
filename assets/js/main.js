@@ -157,7 +157,7 @@
 					    url: $url,
 					    method: "GET",
 					    dataType: "json",
-					    data: $form.email
+					    data: $('form#signup-form').serializeObject()
 					}).success(
 					    // do something
 					);
