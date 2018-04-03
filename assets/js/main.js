@@ -157,7 +157,7 @@
 					    url: url,
 					    method: "GET",
 					    dataType: "json",
-					    data: $form.serializeObject()
+					    data: $(this).serializeObject()
 					}).success(
 					    // do something
 					);
