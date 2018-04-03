@@ -157,12 +157,7 @@
 					// Note: Doesn't actually do anything yet (other than report back with a "thank you"),
 					// but there's enough here to piece together a working AJAX submission call that does.
 					window.setTimeout(function() {
-						// Reset form.
-						$form.reset();
 
-						// Enable submit.
-						$submit.disabled = false;
-						
 						var jqxhr = $.ajax({
 						    url: url,
 						    method: "GET",
@@ -170,6 +165,11 @@
 						    data: $form.serializeObject()
 						}).success(
 						    // do something
+							// Reset form.
+							$form.reset();
+
+							// Enable submit.
+							$submit.disabled = false;
 
 							// Show message.
 							$message._show('success', 'You have been added to our mailing list. Thank you!');
