@@ -111,7 +111,7 @@
 
 			// Vars.
 				var $form = document.querySelectorAll('#signup-form')[0],
-					url = 'https://script.google.com/macros/s/AKfycbxHBsvnYzuJInyN_E1bKoRtMfd-HfFW5j6ENoOw4pPumKVXRLc/exec',
+					$url = 'https://script.google.com/macros/s/AKfycbxHBsvnYzuJInyN_E1bKoRtMfd-HfFW5j6ENoOw4pPumKVXRLc/exec',
 					$submit = document.querySelectorAll('#signup-form input[type="submit"]')[0],
 					$message;
 
